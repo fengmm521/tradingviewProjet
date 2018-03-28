@@ -1,0 +1,18 @@
+[INFO  - 2018-03-28T18:58:16.912Z] GhostDriver - Main - running on port 56568
+[INFO  - 2018-03-28T18:58:17.786Z] Session [f9e71650-32b9-11e8-8a49-2f64dff2443c] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2018-03-28T18:58:17.786Z] Session [f9e71650-32b9-11e8-8a49-2f64dff2443c] - page.customHeaders:  - {}
+[INFO  - 2018-03-28T18:58:17.786Z] Session [f9e71650-32b9-11e8-8a49-2f64dff2443c] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2018-03-28T18:58:17.786Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: f9e71650-32b9-11e8-8a49-2f64dff2443c
+[ERROR - 2018-03-28T18:58:21.032Z] Session [f9e71650-32b9-11e8-8a49-2f64dff2443c] - page.onError - msg: TypeError: undefined is not an object (evaluating 'window.quoteSessionMultiplexerInstance.simpleDetailed')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-03-28T18:58:21.032Z] Session [f9e71650-32b9-11e8-8a49-2f64dff2443c] - page.onError - stack:
+  (anonymous function) (https://s.tradingview.com/static/bundles/technicals.7743b8d7e7e7c6a8aee7.17b82d7403eb.js:33)
+  t (https://s.tradingview.com/static/bundles/vendors.fcf59a86ba8b82a0f10f.d8df366dcce0.js:1)
+  webpackJsonp (https://s.tradingview.com/static/bundles/vendors.fcf59a86ba8b82a0f10f.d8df366dcce0.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-03-28T18:58:28.923Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1522263508887
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2018-03-28T19:03:16.922Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
