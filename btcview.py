@@ -5,6 +5,8 @@ import sys
 import time
 import json
 
+import platform
+
 reload(sys)  
 sys.setdefaultencoding('utf8')  
 
@@ -16,6 +18,8 @@ class BTCViewTool(object):
     def __init__(self, savepth = 'out'):
 
         self.savepth = savepth
+
+        self.sysSystem = platform.system()
 
         if not os.path.exists(self.savepth):
             os.mkdir(self.savepth)
@@ -75,10 +79,14 @@ class BTCViewTool(object):
                 chrome_options.add_argument('--headless')
                 chrome_options.add_argument('--disable-gpu')
                 chrome_options.add_argument("user-agent='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'")
-                # self.wdriver = webdriver.Chrome(chrome_options=chrome_options,executable_path='/root/chrome/chromedriver')
-                # print('used chrome')
-
-                self.wdriver = webdriver.Chrome(chrome_options=chrome_options,executable_path='/Users/mage/Documents/tool/cmdtool/chromedriver')
+               
+                if self.sysSystem == 'Windows':  
+                    self.wdriver  = None
+                elif self.sysSystem == 'Darwin':
+                    self.wdriver = webdriver.Chrome(chrome_options=chrome_options,executable_path='/Users/mage/Documents/tool/cmdtool/chromedriver')
+                
+                elif self.sysSystem == 'Linux':
+                    self.wdriver = webdriver.Chrome(chrome_options=chrome_options,executable_path='/root/chrome/chromedriver')
                 print('used chrome')
 
         time.sleep(1)
