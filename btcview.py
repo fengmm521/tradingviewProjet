@@ -115,7 +115,7 @@ class BTCViewTool(object):
             oscdats.append(dattmp)
         madats = []
         for d in madat:
-            dattmp = self.splitOneLineData(o)
+            dattmp = self.splitOneLineData(d)
             madats.append(dattmp)
         outdat['osc'] = oscdats
         outdat['ma'] = madats
